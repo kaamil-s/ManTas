@@ -56,28 +56,28 @@ function App() {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos])
 
-  return ( 
-    <> 
-    <Router>
-    
-      <Header title="My To-Do Lists" searchBar={false} /> 
-  
-      <div class="p-3 mb-2 bg-warning text-white"><h2 class='text-center'>ManTas App</h2></div>
-      <Switch>
-          <Route exact path="/" render={()=>{
-            return(
-            <>
-            <AddTodo addTodo={addTodo} />
-            <Todos todos={todos} onDelete={onDelete} /> 
-            </>)
-          }}> 
+  return (
+    <>
+      <Router>
+
+        <Header title="My To-Do Lists" searchBar={false} />
+
+        <div class="p-2 mb-2 bg-warning text-white"><h2 class='text-center'>ManTas App</h2></div>
+        <Switch>
+          <Route exact path="/" render={() => {
+            return (
+              <>
+                <AddTodo addTodo={addTodo} />
+                <Todos todos={todos} onDelete={onDelete} />
+              </>)
+          }}>
           </Route>
           <Route exact path="/about">
             <About />
-          </Route> 
-        </Switch> 
-      <Footer />
-    </Router>
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
     </>
   );
 }
