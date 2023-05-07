@@ -2,8 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##To get a Preview of ManTas [click here]
-https://github.com/kaamil-s/ManTas/issues/1
+To get a Preview of ManTas [click here https://github.com/kaamil-s/ManTas/issues/1]
+
 
 ## Available Scripts
 
